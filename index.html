@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>PortFolio WebSite</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="main">
+<header>
+<h1>Turist Places</h1>
+</header>
+<div class="topnav">
+  <h2><b>Turist Places</b></h2>
+<p><i>Travelling shouldn't be just a tour, it should be a tale</i></p>  
+</div>
+<div class="row">
+  <div class="column"> 
+<div class="content">
+<img src="https://cdn.pixabay.com/photo/2017/05/13/16/17/taj-mahal-2309923_960_720.jpg", alt="Tajmahal"  style="width:100%">
+<h6><i>TajMahal</i></h6>
+<p>Every year Agra receives millions of visitor around the globe just to see the symbol of love, Taj Mahal.
+ Agra has a spectacular history of Mughals and finest architecture all across the world.</p>
+</div>
+</div>
+<div class="column"> 
+<div class="content">
+<img src="https://www.yatramantra.com/kerala/wp-content/uploads/sites/2/2015/11/Valparai-816x544.jpg", alt="Tajmahal"  style="width:100%">
+<h6><i> Valparai </i></h6>
+<p>The heavenly land is situated in the Coimbatore district of Tamilnadu State with an altitude  of 3500 feet above the sea level. 
+It stands majestically with Green Spread Mountains and forest all around. </p>
+</div>
+</div>
+<div class="column"> 
+<div class="content">
+<img src="https://dt4c7w85dei08.cloudfront.net/uploads/bootsy/image/53/munnar.jpg", alt="Tajmahal" style="width:100%">
+<h6><i>Tea Gardens</i></h6>
+<p>Munnar is a most exotic destination in India moreover houseboat experience in backwaters makes it exceptional.
+ No travel in India is complete without visiting god' own country Kerala</p>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="content">
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="https://www.yatramantra.com/kerala/wp-content/uploads/sites/2/2015/11/Aliyar-Dam-e1446975448949.jpg" style="width:1000px">
+  <img class="mySlides" src="http://3.bp.blogspot.com/-ZIpe-JJHEH8/VtGajQleU2I/AAAAAAAADDA/VUJh0Hi_q-g/s1600/Garadia-Mahadev-Temple-Kota.jpg" style="width:1000px">
+  <img class="mySlides" src="https://image3.mouthshut.com/images/imagesp/925036779s.jpg" style="width:1000px">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+</div>
+</div>
+</body>
+</html>
